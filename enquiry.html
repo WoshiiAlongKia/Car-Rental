@@ -32,3 +32,73 @@
             </div>
         </nav>
         </header>
+        
+         <article id="enquiry-page">
+                <h1 id="enquiry-us">ENQUIRIES</h1>
+
+            <div id="form-background">
+                <form id="survey" method="GET" action="process.php">
+                    <fieldset id="personal_details_field">
+                        <legend>Personal Details:</legend>
+                        
+                        <table>
+                            <tr>
+                                <td><label for="firstname">First Name:</label></td>
+                                <td><input type = "text" name="firstname" placeholder="Your name" id="firstname" required="required" maxlength="25" pattern="[a-zA-Z]+"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lastname">Last Name:</label></td>
+                                <td><input type = "text" name="lastname" placeholder="Your name" id="lastname" required="required" maxlength="25" pattern="[a-zA-Z]+"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="c_email">Email:</label></td>
+                                <td><input type = "email" name="c_email" placeholder="Your email" id="c_email" required="required"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="c_contact"> Mobile Number:</label></td>
+                                <td><input type = "text" name="pcontact" required="required" id="c_contact" maxlength="10" placeholder="+60-123456789"></td>
+                            </tr>
+                            
+                            
+                        </table>   
+                    </fieldset>
+
+                    <fieldset id="customer_address">
+                        <legend>Address</legend>
+                        <table >
+                            <tr>
+                                <td><label for="street_address">Street Address</label></td>
+                                <td><input type="text" id="street_address" name="street_address" maxlength="40"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="town">City/Town: </label></td>
+                                <td><input type="text" id="town" name="town" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="state">State:</label></td>
+                                <td>
+                                    <select name="state" id="state">
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Melaka">Melaka</option>
+                                        <option value="N9">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="KL">Federal Territory of Kuala Lumpur</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Kedah">Kedah</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="postcode">Postcode:</label></td>
+                                <td><input type="text" name="postcode" id="postcode" pattern="\d{5}"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
