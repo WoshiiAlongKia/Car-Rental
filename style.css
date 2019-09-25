@@ -1,0 +1,260 @@
+body{
+  margin: 0;
+}
+
+nav {
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+  color : white;
+}
+
+nav a:hover{
+  color : grey;
+}
+
+nav li{
+  display: inline;
+  margin-right: 20px;
+
+}
+
+.topnav{
+  background-color: #333;
+  overflow : hidden;
+}
+
+.slider{
+  overflow: hidden;
+  height:40em;
+}
+
+article{
+  clear: left;
+}
+
+.slider figure div{
+  width:20%;
+  float: left;
+}
+
+.slider figure img{
+  width:100%;
+  float: left;
+}
+
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin:0;
+  left:0;
+  right:0;
+  animation: animate 10s infinite;
+}
+
+@keyframes animate{
+   0%{
+       left:0;
+   }
+   20%{
+       left:0;
+   }
+   25%{
+       left:-100%;
+   }
+   45%{
+       left:-100%;
+   }
+   50%{
+       left:-200%;
+   }
+   70%{
+       left:-200%;
+   }
+   75%{
+       left:-300%;
+   }
+   95%{
+       left:-300%;
+   }
+   100%{
+       left:-400%;
+   }
+}
+
+.section-dark{
+  background-color: rgb(226, 226, 226);
+  color:black;
+}
+
+.highlight{
+  text-align: center;
+  font-size: 30px;
+}
+
+.product_box{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.product_box img{
+    display: inline-block;
+    margin:0 auto;
+    height:40%;
+    width:40%;
+    transition: .3s;
+}
+
+.product_box:hover img{
+    filter: blur(2px) brightness(35%);
+    box-shadow:0 16px 16px cyan;
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer {
+	text-align: center;
+	background-color:rgb(37,42,44);
+	color: rgb(37,42,44);
+	padding: 15px;
+}
+
+
+.footerlink{
+	padding: 15px;
+}
+
+/* Footer Narvigation Bar link */
+.footerlink a {
+    font-size: 24px;
+}
+
+/* Footer Narvigation Bar link hover */
+.footerlink a:hover {
+	color: rgb(220,253,0);
+}
+
+/* Footer social media link */
+footer .fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+
+/* Footer social media link hover*/
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+/* Footer social media link icons */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+button:hover {
+    animation: bounce 1s;
+}
+
+.youtube {
+    padding: 0;
+    border: none;
+    background-color: #bb0000;
+    margin: 10px 15px;
+    border-radius: 50%;
+}
+
+.facebook {
+    padding: 0;
+    border: none;
+    background-color: #3B5998;
+    margin: 10px 15px;
+    border-radius: 50%;
+}
+
+.instagram {
+    padding: 0;
+    border: none;
+    background-color: #125688;
+    margin: 10px 15px;
+    border-radius: 50%;
+}
+
+.twitter {
+    padding: 0;
+    border: none;
+    background-color: #55ACEE;
+    margin: 10px 15px;
+    border-radius: 50%;
+}
+/* Navigation bar */
+.footerz {
+	display: inline;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 15px;
+}
+
+/* Navigation bar link */
+.footerz a  {
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/* copyright */
+.copyright {
+	color: #A7A0A0;
+}
+
+.dev{
+  display: inline;
+  padding: 10px 15px;
+}
+
+.dev a{
+  text-decoration: none;
+  color: #A7A0A0;
+  font-size: 20px;
+}
+
+.dev:hover{
+  text-decoration: none;
+  list-style-type: none;
+}
